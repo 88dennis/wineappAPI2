@@ -1,1 +1,3 @@
-# wineappAPI2
+# Tannin-API
+
+API for Wine
