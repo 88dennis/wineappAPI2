@@ -26,7 +26,8 @@ app.use(cors());
 //         resave: false,
 //         saveUninitialized: false
 //     }))
-app.use(session({secret: "keyboard cat", resave: true, saveUninitialized: true }))
+app.use(session({secret: "keyboard cat", resave: true, saveUninitialized: true, cookie: { maxAge : 3600000 } }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
